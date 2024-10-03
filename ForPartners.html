@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet"
+            href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+            integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+            crossorigin="anonymous" />
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script
+            src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV"
+            crossorigin="anonymous"></script>
+        <script src="https://kit.fontawesome.com/ac42c3b1f7.js"
+            crossorigin="anonymous"></script>
+        <title>For Partnerships Adoodle</title>
+        <link rel="stylesheet" href="adoodlestyle.css" />
+        <style>
+            #LoginButton{
+                background: linear-gradient(90deg, #003A74, #006AD5);
+                border-radius: 10px;
+                color: white;
+                border:none;
+
+
+            }
+            
+.a.register{
+  border-radius: 15px;
+  background: linear-gradient(90deg, #003A74, #006AD5);
+  color: white;
+}
+.a.login{
+  border-radius: 15px;
+  background: linear-gradient(90deg, #003A74, #006AD5);
+  color: white;
+}
+/* Initially hide the more content */
+.more-content {
+        display: none;
+    }
+
+    /* Hide the checkbox */
+    .read-more-checkbox {
+        display: none;
+    }
+
+    /* When the checkbox is checked, show the hidden content */
+    .read-more-checkbox:checked ~ .more-content {
+        display: block;
+    }
+
+    /* Change label text when the checkbox is checked */
+    .read-more-checkbox:checked + .read-more-label::before {
+        content: 'Read Less';
+    }
+
+    /* Default label text */
+    .read-more-label::before {
+        content: 'Read More';
+        color: blue;
+        cursor: pointer;
+    }
+
+    /* Add some margin for the label */
+    .read-more-label {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .image{
+        height:100%;
+        width:auto;
+    }
+    .counter-container {
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .counter-container img {
+        width: 100px; /* Adjust this size as needed */
+        height: auto;
+        animation: move-left-right 20s linear infinite;
+    }
+
+    @keyframes move-left-right {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    .body, .html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .banner {
+            height: 75vh;
+            background-image: url('https://png.pngtree.com/thumb_back/fh260/back_pic/02/50/63/71577e1cf59d802.jpg');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            font-size: 2rem;
+        }
+
+        .counter-container {
+        display: flex;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+
+    .counter-container img {
+        width: 100px; /* Adjust this size as needed */
+        height: 100px;
+        animation: move-left-right 20s linear infinite;
+    }
+
+    @keyframes move-left-right {
+        0% {
+            transform: translateX(100%);
+        }
+        100% {
+            transform: translateX(-100%);
+        }
+    }
+    
+.box-a {
+  position: relative;
+  display: block;
+  width: 520px;
+  height: 100%;
+  margin: 40px auto;
+  color: #a8aabc;
+  border: 1px solid #a8aabc;
+  overflow: hidden;
+  
+  .show {
+    position: relative;
+    height: 200px;
+    
+    h1 {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      font-size: 1.5em;
+      transform: translate(-50%, -50%);
+    }
+  }
+  
+  .hide {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: auto;
+    padding: 28px;
+    color: #ffffff;
+    background-color: #384878;
+    transform: translateY(100%);
+    transition: transform .5s;
+  }
+  
+  &:hover {
+    .hide {
+      transform: translateY(0);
+    }
+  }
+}
+
+
+        </style>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="adoodle.html">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727688038/Black_PNG_e33f2x.png"
+                        class="adoodle-logo" />
+                </a>
+                <button class="navbar-toggler" type="button"
+                    data-toggle="collapse" data-target="#navbarNavAltMarkup"
+                    aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ml-auto">
+                        <a class="nav-link active" id="navItem1"
+                            href="index.html">
+                            Home
+                            <span class="sr-only">(current)</span>
+                        </a>
+
+                        <a class="nav-link" href="ForAdvertiser.html"
+                            target="_blank"
+                            id="navItem3">For Advertiser</a>
+                        <a class="nav-link" href="ForInventory.html"
+                            target="_blank"
+                            id="navItem4"> For Inventory,</a>
+                        <a class="nav-link" href="ForPartners.html"
+                            target="_blank"
+                            id="navItem4">For Partners </a>
+                        <a href="loginPage.html" class="login nav-link"
+                            id="LoginButton" target="_blank">Login</a>
+                        <!-- <a href="signupPage.html" class="register nav-link"
+                            id="SignupButton" target="_blank">Signup</a> -->
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class=" d-flex justify-content-center flex-column">
+           
+           
+            <div
+            class="banner-section-bg-container d-flex justify-content-center flex-column">
+
+            <div class="container">
+                <h1 class="footer-section-address "
+                    style="text-align: center; font-size: 40px; font-weight: bold;">
+                    Earnings of Refering Advertisers and Inventorys</h1>
+                <div class="row">
+
+                    <div class="col-6">
+                        <a href="#" class="box-a">
+                            <div class="show">
+                                <h1>Refer advertiser</h1>
+                            </div>
+                            <div
+                                class="hide d-flex flex-row justify-content-center p-1">
+                                <div class="p-3  shadow">
+                                    <p>Earn 5% Discount</p>
+                                </div>
+                                
+
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-6">
+                        <a href="#" class="box-a">
+                            <div class="show">
+                                <h1>Refer Inventory</h1>
+                            </div>
+                            <div
+                                class="hide d-flex flex-row justify-content-center p-1">
+                                <div class="p-3  shadow">
+                                    <p>Earn upto 25% offer </p>
+                                </div>
+                                
+
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div> 
+        </div>
+        <div class="wcu-section pt-5 pb-5" id="wcuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="wcu-section-heading">Adoodle Features
+                            Overview</h1>
+                        <p class="wcu-section-description">
+                            Adoodle offers powerful features to enhance your
+                            advertising experience, including Earnings tracking
+                            to monitor revenue, a History section to review past
+                            campaigns, and Referral Ads to earn rewards by
+                            bringing in new users, all designed to maximize
+                            engagement and growth.
+                        </p>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727923401/pngtree-money-bag-logo-icon-vector-template-png-image_5141278-removebg-preview_npt3nf.png" class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Earnings</h1>
+                            <p class="wcu-card-description">
+                                The Earnings feature lets users track revenue
+                                from ad campaigns, offering insights to optimize
+                                performance and growth over time.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img
+                                src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727928596/32223-removebg-preview_rh1zpu.png"
+                                class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">History</h1>
+                            <p class="wcu-card-description">Adoodle’s History
+                                section records past campaigns, allowing users
+                                to review performance and refine strategies for
+                                future success.</p>
+
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="wcu-card p-3 mb-3">
+                            <img
+                                src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727923722/referral-marketing-black-icon-sign-vector-23014534-removebg-preview_g9jtye.png"
+                                class="wcu-card-image" />
+                            <h1 class="wcu-card-title mt-3">Referal
+                                Ads</h1>
+                            <p class="wcu-card-description">The Referral Ads
+                                feature rewards users for referring others,
+                                creating additional income opportunities through
+                                increased platform engagement.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <h1>Our Clients</h1>
+        <section class="container-fluid counter-container bg-">
+
+            <div class="counter-container row pb-4 pt-4 mb-4 mt-4"
+                id="scrolling-images">
+
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727708186/Google_zscgkr.webp"
+                        class="image mt-2 mb-2" />
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727771068/KIA_-removebg-preview_h8dp8l.png"
+                        class="image mt-2 mb-2" />
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727707971/microsoft_image_xoeqzu.png"
+                        class="image mt-2 mb-2" />
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727771303/yahoo_image-removebg-preview_oya3yq.png"
+                        class="image mt-2 mb-2" />
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727707971/DVV_f7ti4q.png"
+                        class="image mt-2 mb-2" />
+                </div>
+                <div
+                    class="d-flex flex-column justify-content-center col-2 pb-4 pt-4 mb-4 mt-4">
+                    <img
+                        src="https://res.cloudinary.com/divvthkh8/image/upload/v1727853737/graphic-designer-logo-bd-logo-removebg-preview_ocagwe.png"
+                        class="image mt-2 mb-2" />
+                </div>
+            </div>
+        </section>
+
+        <div class="body html">
+            <section class="banner">
+                <div>
+                    <h1 >Welcome to Our Adoodle</h1>
+                    <p>Create amazing banner of your Ads!</p>
+                </div>
+            </section>
+            <section class="container-fluid col-12">
+                <div class="counter-container " id="NumberCount">
+                    <div class="counter mr-4">
+
+                        <span id="brands">0</span>+
+                        <p>BRANDS</p>
+                    </div>
+                    <div class="counter ml-4 mr-4">
+
+                        <span id="investments">0 </span>+
+
+                        <p>INVESTMENTS</p>
+                    </div>
+                    <div class="counter mr-4">
+
+                        <span id="partnerships">0</span>+
+                        <p>PARTNERSHIPS</p>
+                    </div>
+                </div>
+            </section>
+            <div class="wcu-section pt-5 pb-5" id="wcuSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="wcu-section-heading">Adoodle Key Features
+                                Overview</h1>
+                            <p class="wcu-section-description">
+                                Adoodle provides essential tools like Advertise
+                                Returns to track ad performance, Inventory
+                                Returns for monitoring stock, Earnings to view
+                                revenue, and History to review past campaigns,
+                                ensuring optimized ad management.
+                            </p>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="wcu-card p-3 mb-3">
+                                <img src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727927427/kisspng-arrow-computer-icons-clip-art-black-guide-arrows-5adb762796f190.1635441315243320716183-removebg-preview_hbpiwh.png" class="wcu-card-image" />
+                                <h1 class="wcu-card-title mt-3">Advertise
+                                    Returns</h1>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="wcu-card p-3 mb-3">
+                                <img
+                                    src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727928543/images-removebg-preview_ejwhij.png"
+                                    class="wcu-card-image" />
+                                <h1 class="wcu-card-title mt-3">Inventory
+                                    Returns</h1>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="wcu-card p-3 mb-3">
+                                <img
+                                    src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727928778/images-removebg-preview_1_refbwc.png"
+                                    class="wcu-card-image" />
+                                <h1 class="wcu-card-title mt-3">Earnings</h1>
+
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-3">
+                            <div class="wcu-card p-3 mb-3">
+                                <img
+                                    src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727928865/png-transparent-computer-icons-history-history-angle-text-trademark-thumbnail-removebg-preview_aofp3x.png"
+                                    class="wcu-card-image" />
+                                <h1 class="wcu-card-title mt-3">History</h1>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="explore-menu-section pt-5 pb-5" id="exploreMenuSection">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <h1 class="menu-section-heading">Explore Our Adds</h1>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Digital</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right-short"
+                                    fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="shadow menu-item-card p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Virtuval</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Posters</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Cabs & Auto Publishment
+                            </h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Traditional
+                                Publishment</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Social media </h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">Meemers</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="menu-item-card shadow p-3 mb-3">
+                            <img
+                                src
+                                class="menu-item-image w-100" />
+                            <h1 class="menu-card-title">YouTubers</h1>
+                            <a href class="menu-item-link">
+                                View All
+                                <svg width="16px" height="16px"
+                                    viewBox="0 0 16 16"
+                                    class="bi bi-arrow-right" fill="#d0b200"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path fill-rule="evenodd"
+                                        d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8z" />
+                                </svg>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            <div class="healthy-food-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5">
+                            <div class="text-center">
+                                <img
+                                    src="https://res.cloudinary.com/divvthkh8/image/upload/v1727850450/ads_image-removebg-preview_orcif9.png"
+                                    class="healthy-food-section-img" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7">
+                            <h1 class="healthy-food-section-heading">
+                                Comprehensive Digital Advertising Solutions with
+                                Adoogle
+                            </h1>
+                            <p class="healthy-food-section-description">
+                                At Adoogle, we are a service-based company
+                                dedicated
+                                to providing a wide range of digital advertising
+                                solutions. Our offerings include various
+                                categories
+                                such as digital ads, virtual campaigns, posters,
+                                and
+                                more traditional publications. We also
+                                specialize in
+                                targeted cab and auto advertisements, ensuring
+                                high
+                                visibility in urban areas. Our expertise extends
+                                to
+                                social media marketing, partnering with
+                                influencers
+                                like meme creators and YouTubers to help amplify
+                                your brand's presence. With a focus on
+                                innovative
+                                strategies and effective execution, Adoogle is
+                                your
+                                go-to for all your advertising needs. Explore
+                                all
+                                our services to find the perfect fit for your
+                                business!
+                            </p>
+                            <button class="custom-button">Watch Video</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="delivery-and-payment-section pt-5 pb-5"
+                id="deliveryPaymentSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-md-5 order-1 order-md-2">
+                            <div class="text-center">
+                                <img
+                                    src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727688038/Black_PNG_e33f2x.png"
+                                    class="delivery-and-payment-section-img" />
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-7 order-2 order-md-1">
+                            <h1 class="delivery-and-payment-section-heading">
+                                Delivery and Payment
+                            </h1>
+                            <p class="delivery-and-payment-section-description">
+                                Enjoy hassle-free payment with a wide range of
+                                payment options available for your ad services.
+                                Get
+                                real-time tracking and monitor the progress of
+                                your
+                                campaigns on a live dashboard. It’s exciting to
+                                watch your ads reach the right audience! Plus,
+                                enjoy
+                                a 5% discount on every order whenever you pay
+                                online
+                                for our services.
+                            </p>
+                            <button class="custom-button">Order Now</button>
+                            <div class="mt-3">
+                                <img
+                                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/visa-card-img.png"
+                                    class="payment-card-img" />
+                                <img
+                                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/master-card-img.png"
+                                    class="payment-card-img" />
+                                <img
+                                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/paypal-card-img.png"
+                                    class="payment-card-img" />
+                                <img
+                                    src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/american-express-img.png"
+                                    class="payment-card-img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="thanking-customers-section pt-5 pb-5">
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-12 col-md-7 d-flex flex-column justify-content-center">
+                        <h1 class="thanking-customers-section-heading">
+                            Thank you for being a valuable customer to us.
+                        </h1>
+                        <p class="thanking-customers-section-description">
+                            We have a surprise gift for you
+                        </p>
+                        <div class="d-md-none">
+                            <img
+                                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                                class="thanking-customers-section-img" />
+                        </div>
+                        <div>
+                            <button type="button" class="custom-button"
+                                data-toggle="modal" data-target="#exampleModal">
+                                Redeem Gift
+                            </button>
+                            <div class="modal fade" id="exampleModal"
+                                tabindex="-1"
+                                aria-labelledby="exampleModalLabel"
+                                aria-hidden="true">
+                                <div class="modal-dialog mt-5">
+                                    <div class="modal-content">
+                                        <div class="modal-header">
+                                            <h5
+                                                class="modal-title thanking-customers-section-modal-title"
+                                                id="exampleModalLabel">
+                                                Gift Voucher
+                                            </h5>
+                                            <button type="button" class="close"
+                                                data-dismiss="modal"
+                                                aria-label="Close">
+                                                <span
+                                                    aria-hidden="true">&times;</span>
+                                            </button>
+                                        </div>
+                                        <div class="modal-body">
+                                            <img
+                                                src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/gift-voucher-img.png"
+                                                class="w-100" />
+                                        </div>
+                                        <div class="modal-footer">
+                                            <button type="button"
+                                                class="btn btn-secondary"
+                                                data-dismiss="modal">
+                                                Close
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-5 d-none d-md-block">
+                        <img
+                            src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-responsive-website/thanking-customers-section-img.png"
+                            class="thanking-customers-section-img" />
+                    </div>
+                </div>
+            </div>
+        </div> -->
+            <div class="follow-us-section pt-5 pb-5" id="followUsSection">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1 class="follow-us-section-heading">Follow Us</h1>
+                        </div>
+                        <div class="col-12">
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="follow-us-icon-container">
+                                    <a
+                                        href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true"><i
+                                            class="fab fa-twitter icon"></i></a>
+                                </div>
+                                <div class="follow-us-icon-container">
+                                    <a
+                                        href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true"><i
+                                            class="fab fa-linkedin icon"></i>
+                                    </a>
+                                </div>
+                                <div class="follow-us-icon-container">
+                                    <a
+                                        href="https://www.linkedin.com/mynetwork/grow/?skipRedirect=true">
+                                        <i class="fab fa-facebook icon"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-section pt-5 pb-5">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 text-center">
+                            <img
+                                src="https://res.cloudinary.com/dk6egvuyy/image/upload/v1727797643/White_PNG_fupty9_Banner_169_ghvayv.png"
+                                class="adoodle-logo" />
+                            <h1
+                                class="footer-section-mail-id">adoodle@advertiser.com</h1>
+                            <p class="footer-section-address">
+                                Adoodl, Raj Bhavan Rd Somajigud, Hyderabad,
+                                India.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script src="adoodleNumberCount.js"> </script>
+            
+        </body>
+
+    </html>
